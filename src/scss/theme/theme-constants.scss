@@ -1,0 +1,41 @@
+//color
+$color-primary: #ff3300;
+$color-light-primary: #fff6f3;
+$color-dark: #303030;
+$color-extra-dark: #212121;
+$color-light: #fffdff;
+$color-dark-gray: #616668;
+$color-light-gray: #9d9fa0;
+
+$primary-box-shadow: 13px 13px 30px rgba($color-primary, 0.08);
+$radius: 50px;
+$none: none;
+
+//icons
+$sun: url("../assets/brightness-high-fill.svg");
+$moon: url("../assets/moon-fill.svg");
+
+//theme keys
+$themed-bg: "themed-bg";
+$themed-color: "themed-color";
+$themd-alpha-bg: "themed-alpha-bg";
+$ic-theme: "ic-theme";
+$themed-box-shadow: "themed-box-shadow";
+
+// theme map
+$themes: (
+    default: (
+        themed-bg: $color-light,
+        themed-color: $color-dark-gray,
+        themed-alpha-bg: $color-light-primary,
+        ic-theme: $sun,
+        themed-box-shadow: $primary-box-shadow,
+    ),
+    dark: (
+        themed-bg: $color-dark,
+        themed-color: $color-light,
+        themed-alpha-bg: $color-dark,
+        ic-theme: $moon,
+        themed-box-shadow: $none,
+    ),
+);
